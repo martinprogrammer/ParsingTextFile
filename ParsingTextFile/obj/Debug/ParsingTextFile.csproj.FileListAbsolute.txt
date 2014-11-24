@@ -1,0 +1,6 @@
+c:\users\mwollny\documents\visual studio 2013\Projects\ParsingTextFile\ParsingTextFile\bin\Debug\ParsingTextFile.exe.config
+c:\users\mwollny\documents\visual studio 2013\Projects\ParsingTextFile\ParsingTextFile\bin\Debug\ParsingTextFile.exe
+c:\users\mwollny\documents\visual studio 2013\Projects\ParsingTextFile\ParsingTextFile\bin\Debug\ParsingTextFile.pdb
+c:\users\mwollny\documents\visual studio 2013\Projects\ParsingTextFile\ParsingTextFile\obj\Debug\ParsingTextFile.exe
+c:\users\mwollny\documents\visual studio 2013\Projects\ParsingTextFile\ParsingTextFile\obj\Debug\ParsingTextFile.pdb
+c:\users\mwollny\documents\visual studio 2013\Projects\ParsingTextFile\ParsingTextFile\obj\Debug\ParsingTextFile.csprojResolveAssemblyReference.cache
