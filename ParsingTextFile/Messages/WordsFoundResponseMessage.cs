@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.Specialized;
+using ParsingTextFile.Models;
 
 namespace ParsingTextFile
 {
     public class WordsFoundResponseMessage
     {
-        public string Word { get; set; }
-        public int Count { get; set; }
+        public IEnumerable<WordCount> WordCounts { get; set; }
     }
 }

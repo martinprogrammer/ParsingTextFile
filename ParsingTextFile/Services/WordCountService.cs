@@ -12,38 +12,22 @@ namespace ParsingTextFile.Services
     public class WordCountService : IWordCountService
     {
         private string _path;
-        private IWordCountBaseLogic WordCountLogic;
-
+        private BookToParse book;
+       
         public WordCountService()
-            : this(@"c:\MobyDick.txt")
+            : this(@"~..\..\..\..\Books\MobyDick.txt")
         {
         }
 
         public WordCountService(string path)
         {
             _path = path;
-            BookToParse book = new BookToParse(_path);
-
-            if (book.DoesFileExist())
-            {
-
-                WordsFoundRequestMessage request = new WordsFoundRequestMessage
-                {
-                    FilePath = _path,
-                    FileSize = book.GetFileSize(),
-                    FileStream = book.GetStreamReader()
-                };
-
-                WordCountLogic = WordCountLogicFactory.GetWordCountBaseLogicFor(request);
-            }
-            else
-                throw new FileDoesntExist();
-
+             book = new BookToParse(_path);
         }
 
         public WordsFoundResponseMessage GetWordsAndCounts()
         {
-            return WordCountLogic.GetWordsAndCounts();
+            return book.logic.GetWordsAndCounts(book);
         }
     }
 }

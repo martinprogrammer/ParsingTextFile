@@ -42,19 +42,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataReader.cs" />
+    <Compile Include="Logic\Trier\DataReader.cs" />
     <Compile Include="Exceptions\FileDoesntExist.cs" />
     <Compile Include="Logic\IWordCountBaseLogic.cs" />
+    <Compile Include="Logic\NoBookLogic.cs" />
     <Compile Include="Logic\SmallBookLogic.cs" />
     <Compile Include="Logic\LargeBookLogic.cs" />
+    <Compile Include="Logic\Trier\TrierMain.cs" />
     <Compile Include="Logic\WordCountLogicFactory.cs" />
     <Compile Include="Models\BookExtensionMethods.cs" />
     <Compile Include="Models\BookToParse.cs" />
+    <Compile Include="Models\WordCount.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IWordCountService.cs" />
     <Compile Include="Services\WordCountService.cs" />
-    <Compile Include="TrieNode.cs" />
+    <Compile Include="Logic\Trier\TrieNode.cs" />
     <Compile Include="Messages\WordsFoundRequestMessage.cs" />
     <Compile Include="Messages\WordsFoundResponseMessage.cs" />
   </ItemGroup>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ParsingTextFile.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace ParsingTextFile.Logic
 {
     public interface IWordCountBaseLogic
     {
-        WordsFoundResponseMessage GetWordsAndCounts();
+        WordsFoundResponseMessage GetWordsAndCounts(BookToParse book);
     }
 }

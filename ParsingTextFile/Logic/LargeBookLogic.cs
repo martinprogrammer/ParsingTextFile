@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ParsingTextFile.Logic.Trier;
+using ParsingTextFile.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +10,18 @@ namespace ParsingTextFile.Logic
 {
     public class LargeBookLogic : IWordCountBaseLogic
     {
-        public WordsFoundResponseMessage GetWordsAndCounts()
+        private List<string> words;
+        private WordsFoundResponseMessage response;
+         public LargeBookLogic()
         {
-            throw new NotImplementedException();
+            words = new List<string>();
+            response = new WordsFoundResponseMessage();
+        }
+        public WordsFoundResponseMessage GetWordsAndCounts(BookToParse book)
+        {
+            response.WordCounts = TrierMain.GetTrier(book);
+            return response;
+            
         }
     }
 }
