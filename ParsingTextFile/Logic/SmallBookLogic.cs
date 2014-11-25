@@ -21,6 +21,8 @@ namespace ParsingTextFile.Logic
         }
         public WordsFoundResponseMessage GetWordsAndCounts(BookToParse book)
         {
+            Console.WriteLine();
+            Console.WriteLine("Simple lambda");
             var response = new WordsFoundResponseMessage();
             response.WordCounts =  book.GetWordList().GroupBy(p => p).Select(p => new WordCount { Word = p.Key, Count = p.Count() }).OrderBy(p=>p.Count);
             return response;

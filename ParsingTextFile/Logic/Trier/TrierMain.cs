@@ -28,8 +28,7 @@ namespace ParsingTextFile.Logic.Trier
 
             DateTime stop_at = DateTime.Now;
             
-            Console.WriteLine();
-            Console.WriteLine("Trier method - please be patient ;-)");
+           
 
             //List<TrieNode> top10_nodes = new List<TrieNode> { root, root, root, root, root, root, root, root, root, root };
             List<TrieNode> top10_nodes = new List<TrieNode>();

@@ -11,6 +11,6 @@ namespace ParsingTextFile
     {
         public string FilePath { get; set; }
         public long FileSize { get; set; }
-        public StreamReader FileStream { get; set; }
+       
     }
 }

@@ -19,6 +19,8 @@ namespace ParsingTextFile.Logic
         }
         public WordsFoundResponseMessage GetWordsAndCounts(BookToParse book)
         {
+            Console.WriteLine();
+            Console.WriteLine("Trie method - please be patient ;-)");
             response.WordCounts = TrierMain.GetTrier(book);
             return response;
             

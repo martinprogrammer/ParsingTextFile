@@ -13,16 +13,17 @@ namespace ParsingTextFile.Logic
         {
             long fileSize = 0;
 
-            if(book.DoesFileExist())
+            if (book.DoesFileExist())
                 fileSize = book.GetFileSize();
 
             IWordCountBaseLogic theLogic;
             if (fileSize == 0)
                 theLogic = new NoBookLogic();
-            else if (fileSize < 500)
-                theLogic = new SmallBookLogic();
-            else
+            else if (fileSize < 15500)
                 theLogic = new LargeBookLogic();
+            else
+                theLogic = new SmallBookLogic();
+
 
             return theLogic;
         }
